@@ -1,15 +1,16 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+console.log("process.env.NODE_ENV", process.env.NODE_ENV);
 module.exports = {
-	//模式 development/production
-	mode: "development",
+	//模式 development/production  //在package.json的script中可以配置
+	// mode: "development",
 	//打包入口文件
 	entry: { main: "./src/index.js" },
 	// 打包的出口文件和路径
 	output: {
 		path: path.join(__dirname, "./dist"),
-		filename: "main.js",
+		filename: "mian.[contenthash:8].js",
+		clean: true,
 	},
 	devServer: {
 		//开发服务器的配置
