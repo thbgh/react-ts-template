@@ -16,12 +16,7 @@
       "prettier --write",
       "git add --force"
     ],
-    "*.{html,css,scss,less}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.{md,json}": [
+    "*.{html,css,scss,less,md,json}": [
       "git add --force"
     ]
   },

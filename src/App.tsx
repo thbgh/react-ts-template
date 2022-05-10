@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import AntdComp from './components/AntdComp';
 import './App.css';
 import logo from './logo.svg';

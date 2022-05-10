@@ -6,5 +6,17 @@
   "singleQuote": true,
   "trailingComma": "all",
   "arrowParens": "avoid",
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "eslint.run": "onType",
+  "eslint.options": {
+    "extensions": [".js", ".ts", ".jsx", ".tsx"]
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": " esbenp.prettier-vscode",
+  "spaceBeforeFunctionParen": true,
+
+  "bracketSpacing": false
 }

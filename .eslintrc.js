@@ -51,12 +51,12 @@ module.exports = {
 
   rules: {
     'jsx-no-lambda': 0,
-    semi: [2, 'always'],
+    ['semi']: [2, 'always'],
     '@typescript-eslint/interface-name-prefix': 0,
     '@typescript-eslint/no-empty-interface': 0,
     'object-shorthand': [0, 'never'],
     //单引号
-    quotes: 'off',
+    ['quotes']: 'off',
     '@typescript-eslint/quotes': 'off',
     '@typescript-eslint/no-var-requires': 0,
     'member-ordering': 0,
@@ -88,7 +88,7 @@ module.exports = {
         // NOTE: If this error triggers, either disable it or add
         // your custom components, labels and attributes via these options
         // See https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md
-        controlComponents: ['Input'],
+        ['controlComponents']: ['Input'],
       },
     ],
     'jsx-a11y/label-has-for': 0,
@@ -99,7 +99,10 @@ module.exports = {
     'newline-per-chained-call': 0,
     'no-confusing-arrow': 0,
     'no-console': 'off',
-    'no-use-before-define': 0,
+    'no-use-before-define': 1,
+    '@typescript-eslint/no-use-before-define': 1,
+    'no-unused-vars': 1,
+    '@typescript-eslint/no-unused-vars': 1,
     'prefer-template': 2,
     'react-hooks/rules-of-hooks': 'error',
     'react/forbid-prop-types': 0,
@@ -162,7 +165,7 @@ module.exports = {
     'react/require-extension': 0,
     'require-yield': 0,
     'space-before-function-paren': 0,
-    indent: 'off',
+    ['indent']: 'off',
   },
   globals: {
     document: false,
