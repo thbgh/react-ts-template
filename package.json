@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git add . && git-cz"
   },
   "config": {
     "commitizen": {
