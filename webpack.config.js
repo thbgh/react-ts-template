@@ -5,7 +5,7 @@ module.exports = {
 	//模式 development/production  //在package.json的script中可以配置
 	// mode: "development",
 	//打包入口文件
-	entry: { main: "./src/index.js" },
+	entry: { main: "./src/index.tsx" },
 	// 打包的出口文件和路径
 	output: {
 		path: path.join(__dirname, "./dist"),
@@ -22,12 +22,21 @@ module.exports = {
 		rules: [
 			// 处理jsx
 			{
-				test: /\.js|jsx$/,
+				test: /\.(j|t)sx?$/,
 				exclude: /node_modules/,
 				loader: "babel-loader",
 				options: {
 					babelrc: false,
-					presets: [require.resolve("@babel/preset-react")],
+					presets: [
+						require.resolve("@babel/preset-react"),
+						[
+							"@babel/preset-typescript",
+							{
+								isTSX: true,
+								allExtensions: true,
+							},
+						],
+					],
 				},
 			},
 			// 处理css和less
@@ -52,7 +61,7 @@ module.exports = {
 	],
 	resolve: {
 		//省略后缀名
-		extensions: ["*", ".js", ".jsx", ".json"],
+		extensions: ["*", ".js", ".jsx", ".ts", ".tsx", ".json", ".svg"],
 		// 配置路径别名
 		alias: {
 			"@assets": path.resolve("./src/assets"),
