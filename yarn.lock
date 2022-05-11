@@ -3750,7 +3750,7 @@ listr2@^4.0.1:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
-loader-runner@^4.2.0:
+loader-runner@^4.1.0, loader-runner@^4.2.0:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/loader-runner/-/loader-runner-4.3.0.tgz"
   integrity sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==
@@ -5759,6 +5759,17 @@ text-table@^0.2.0:
   resolved "https://registry.npmmirror.com/text-table/-/text-table-0.2.0.tgz"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
+thread-loader@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmmirror.com/thread-loader/-/thread-loader-3.0.4.tgz#c392e4c0241fbc80430eb680e4886819b504a31b"
+  integrity sha512-ByaL2TPb+m6yArpqQUZvP+5S1mZtXsEP7nWKKlAUTm7fCml8kB5s1uI3+eHRP2bk5mVYfRSBI7FFf+tWEyLZwA==
+  dependencies:
+    json-parse-better-errors "^1.0.2"
+    loader-runner "^4.1.0"
+    loader-utils "^2.0.0"
+    neo-async "^2.6.2"
+    schema-utils "^3.0.0"
+
 through2@^4.0.0:
   version "4.0.2"
   resolved "https://registry.npmmirror.com/through2/-/through2-4.0.2.tgz"
@@ -5947,7 +5958,7 @@ uri-js@^4.2.2:
 
 url-loader@^4.1.1:
   version "4.1.1"
-  resolved "https://registry.npmmirror.com/url-loader/-/url-loader-4.1.1.tgz"
+  resolved "https://registry.npmmirror.com/url-loader/-/url-loader-4.1.1.tgz#28505e905cae158cf07c92ca622d7f237e70a4e2"
   integrity sha512-3BTV812+AVHHOJQO8O5MkWgZ5aosP7GnROJwvzLS9hWDj00lZ6Z0wNak423Lp9PBZN05N+Jk/N5Si8jRAlGyWA==
   dependencies:
     loader-utils "^2.0.0"
