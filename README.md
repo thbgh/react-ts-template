@@ -10,6 +10,7 @@
 ## 支持功能
 
 - 支持 TS
+- 引入自定义 webpack loader、plugin
 - 代码规范：引入 Eslint、prettier 和 husky
 - git 提交规范
 - 引入 CICD: github action
