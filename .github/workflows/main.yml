@@ -13,7 +13,7 @@ jobs:
     # 步骤
     steps:
       # 使用别人的action
-      - uses: actions/checkout@v2
+      # - uses: actions/checkout@v2
       # 步骤名称
       - name: npm install
         # 步骤执行指令
