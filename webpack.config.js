@@ -110,22 +110,7 @@ module.exports = {
       // filename: "index.html", // 打包生成的html文件名，默认为index
       title: 'WebpackPro',
     }),
-    new webpack.ProgressPlugin(),
-    new BundleAnalyzerPlugin(), // 使用默认配置
-    // 默认配置的具体配置项
-    // new BundleAnalyzerPlugin({
-    //   analyzerMode: 'server',
-    //   analyzerHost: '127.0.0.1',
-    //   analyzerPort: '8888',
-    //   reportFilename: 'report.html',
-    //   defaultSizes: 'parsed',
-    //   openAnalyzer: true,
-    //   generateStatsFile: false,
-    //   statsFilename: 'stats.json',
-    //   statsOptions: null,
-    //   excludeAssets: null,
-    //   logLevel: info
-    // })
+    // new BundleAnalyzerPlugin(), // 使用默认配置(仅限开发模式使用)
     new MyConsolePlugin(),
   ],
   resolve: {
